@@ -1,181 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css"/>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Портфолио</title>
+	<link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-
-    <header>
-        <nav>
-            <a class="logo" href="/" ><span class="logo-first-word">Web</span>Studio</a>
-            <ul>
-                <li><a class="nav-btn" href="./index.html">Студия</a></li>
-                <li><a class="nav-btn" href="">Портфолио</a> </li>
-                <li><a class="nav-btn" href="">Контакты</a></li> 
-            </ul>
-        </nav>
-
-        <div>
-            <ul>
-                <li><a class="mail" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
-                <li><a class="phone-number" href="tel:+380961111111" >+38 096 111 11 11</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <main>
-        <div>
-            <ul>
-                <li><button class="btn" type="button" >Все</button></li>
-                <li><button class="btn" type="button" >Веб-сайты</button></li>
-                <li><button class="btn" type="button" >Приложения</button></li>
-                <li><button class="btn" type="button" >Дизайн</button></li>
-                <li><button class="btn" type="button" >Маркетинг</button></li>
+    <header class="container">
+		    <a class="logo" href="#"><img src="images/logo.png" alt="WebStudio"></a>
+			<nav class="navigation">
+				<ul>
+					<li><a href="./index.html">Студия</a></li>
+					<li><a href="#">Портфолио</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="header-contacts">
+				<a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+				<a class="phone-number" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+			</div>
+	</header>
+    
+	<main>
+		<div>
+            <ul class="catalogue-list">
+                <li><button class="catalogue-btn btn-one" type="button" >Все</button></li>
+                <li><button class="catalogue-btn btn-two" type="button" >Веб-сайты</button></li>
+                <li><button class="catalogue-btn btn-three" type="button" >Приложения</button></li>
+                <li><button class="catalogue-btn btn-four" type="button" >Дизайн</button></li>
+                <li><button class="catalogue-btn btn-five" type="button" >Маркетинг</button></li>
             </ul>
         </div>
 
-        <div>
-            <ul>
-                <li>
-                    <figure>
-                        <img 
-                            src="images/prtfl1.jpg"
-                            alt="Дизайн сайта на экране ноутбука"
-                            width="370"
-                            height="294"
-                        />
-                        <figcaption><p class="project-name">Технокряк</p>
-                            <p><span class="project-category">Веб-сайт</span></p></figcaption>
-                    </figure>
-                </li>
+		<div class="container">
+			<ul class="catalogue">
+				<li class="catalogue-card">
+					<img src="images/prtfl1.jpg" alt="Дизайн сайта на экране ноутбука" class="catalogue-img" >
+					<p class="catalogue-item-name">Технокряк</p>
+					<p class="catalogue-item-description">Веб-сайт</p>
+				</li>
+				<li class="catalogue-card">
+					<img src="images/prtfl2.jpg" alt="Постер на басктебольную тему" class="catalogue-img">
+					<p class="catalogue-item-name">Постер New Orlean vs Golden Star</p>
+					<p class="catalogue-item-description">Дизайн</p>
+				</li>
+				<li class="catalogue-card">
+					<img src="images/prtfl3.jpg" alt="Логотип приложения для ресторана" class="catalogue-img">
+					<p class="catalogue-item-name">Ресторан Seafood</p>
+					<p class="catalogue-item-description">Приложение</p>
+				</li>
+				<li class="catalogue-card">
+					<img src="images/prtfl4.jpg" alt="Наушники черного цвета" class="catalogue-img">
+					<p class="catalogue-item-name">Проект Prime</p>
+					<p class="catalogue-item-description">Маркетинг</p>
+				</li>
+				<li class="catalogue-card">
+					<img src="images/prtfl5.jpg" alt="Две коробки разных размеров: белая и бежевая" class="catalogue-img">
+					<p class="catalogue-item-name">Проект Boxes</p>
+					<p class="catalogue-item-description">Приложение</p>
+				</li>
+				<li class="catalogue-card">
+					<img src="images/prtfl6.jpg" alt="Главная страница сайта на экране" class="catalogue-img">
+					<p class="catalogue-item-name">Inspiration has no Borders</p>
+					<p class="catalogue-item-description">Веб-сайт</p>
+				</li>
+				<li class="catalogue-card">
+					<img src="images/prtfl7.jpg" alt="Разворот журнала" class="catalogue-img">
+					<p class="catalogue-item-name">Издание Limited Edition</p>
+					<p class="catalogue-item-description">Дизайн</p>
+				</li>
+				<li class="catalogue-card">
+					<img src="images/prtfl8.jpg" alt="Лейбл на веревке" class="catalogue-img">
+					<p class="catalogue-item-name">Проект LAB</p>
+					<p class="catalogue-item-description">Маркетинг</p>
+				</li>
+				<li class="catalogue-card">
+					<img src="images/prtfl9.jpg" alt="Экран ноутбука" class="catalogue-img">
+					<p class="catalogue-item-name">Growing Business</p>
+					<p class="catalogue-item-description">Приложение</p>
+				</li>
+			</ul>
+		</div>
 
-                <li>
-                    <figure>
-                        <img 
-                            src="images/prtfl2.jpg"
-                            alt="Постер на басктебольную тему"
-                            width="370"
-                            height="294"
-                        />
-                        <figcaption><p class="project-name">Постер New Orlean vs Golden Star</p>
-                            <p><span class="project-category">Дизайн</span></p></figcaption>
-                    </figure>
-                </li>
+	</main>
 
-                <li>
-                    <figure>
-                        <img 
-                            src="images/prtfl3.jpg"
-                            alt="Логотип приложения для ресторана"
-                            width="370"
-                            height="294"
-                        />
-                        <figcaption><p class="project-name">Ресторан Seafood</p>
-                            <p><span class="project-category">Приложение</span></p></figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure>
-                        <img 
-                            src="images/prtfl4.jpg"
-                            alt="Наушники черного цвета"
-                            width="370"
-                            height="294"
-                        />
-                        <figcaption><p class="project-name">Проект Prime</p>
-                            <p><span class="project-category">Маркетинг</span></p></figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure>
-                        <img 
-                            src="images/prtfl5.jpg"
-                            alt="Две коробки разных размеров: белая и бежевая"
-                            width="370"
-                            height="294"
-                        />
-                        <figcaption><p class="project-name">Проект Boxes</p>
-                            <p><span class="project-category">Приложение</span></p></figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure>
-                        <img 
-                            src="images/prtfl6.jpg"
-                            alt="Главная страница сайта на экране"
-                            width="370"
-                            height="294"
-                        />
-                        <figcaption><p class="project-name">Inspiration has no Borders</p>
-                            <p><span class="project-category">Веб-сайт</span></p></figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure>
-                        <img 
-                            src="images/prtfl7.jpg"
-                            alt="Разворот журнала"
-                            width="370"
-                            height="294"
-                        />
-                        <figcaption><p class="project-name">Издание Limited Edition</p>
-                            <p><span class="project-category">Дизайн</span></p></figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure>
-                        <img 
-                            src="images/prtfl8.jpg"
-                            alt="Лейбл на веревке"
-                            width="370"
-                            height="294"
-                        />
-                        <figcaption><p class="project-name">Проект LAB</p>
-                            <p><span class="project-category">Маркетинг</span></p></figcaption>
-                    </figure>
-                </li>
-
-                <li>
-                    <figure>
-                        <img 
-                            src="images/prtfl9.jpg"
-                            alt="Главная страница сайта на экране ноутбука"
-                            width="370"
-                            height="294"
-                        />
-                        <figcaption><p class="project-name">Growing Business</p>
-                            <p><span class="project-category">Приложение</span></p></figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </div>
-
-    </main>
-
-    <footer>
-          <div>
-            <a class="logo" href="/" ><span class="logo-first-word">Web</span>Studio</a>
-        </div>
-        
-        <address>
-            <ul>
-                <li class="adrss">г. Киев, пр-т Леси Украинки, 26</li>
-                <li><a class="foot-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="foot-phone-number" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
-    </footer>
+	<footer>
+		<div class="container">
+			<a class="logo" href="#" ><img src="images/logo-footer.png" alt="WebStudio"></a>
+			<ul class="footer-contacts">
+				<li><p class="address">г. Киев, пр-т Леси Украинки, 26</p></li>
+				<li><a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+				<li><a class="phone-number" href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
+			</ul>
+		</div>
+	</footer>
 </body>
 </html>
