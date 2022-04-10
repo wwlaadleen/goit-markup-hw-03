@@ -30,6 +30,7 @@ ul{
 body {
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
+	font: 14px/16px 'Roboto';
 }
 
 ul {
@@ -57,8 +58,9 @@ header {
 	background: var(--main-white);
 	align-items: center;
 	justify-content: space-between;
-	font-family: 'RobotoMedium';
+	font-weight: 500;
 }
+
 
 .navigation ul {
 	display: flex;
@@ -114,7 +116,7 @@ header {
 }
 
 h2 {
-	font: 36px/42px 'RobotoBold';
+	font: 36px/42px 'Roboto';
 	text-align: center;
 	color: var(--main-text-color);
 }
@@ -125,7 +127,6 @@ h2 {
 
 .banner {
 	padding: 200px 0;
-	font-family: 'RobotoBold';
 	background: #2F303A;
 }
 
@@ -137,6 +138,7 @@ h2 {
 	line-height: 60px;
 	text-align: center;
 	text-transform: uppercase;
+	font-weight: 900;
 }
 
 .btn-banner {
@@ -144,7 +146,7 @@ h2 {
 	margin: 40px auto 0;
 	width: 200px;
 	height: 50px;
-	font: 16px/30px 'RobotoBold';
+	font: 16px/30px 'Roboto';
 	background: var(--main-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
@@ -176,16 +178,20 @@ h2 {
 
 .feature {
 	margin-bottom: 10px;
-	font-family: 'RobotoBold';
+	font-weight: 700;
 	text-transform: uppercase;
 	color: var(--main-text-color);
 }
 
 .feature-description {
-	font-family: 'RobotoRegular';
+	font-weight: 400;
 	line-height: 24px;
 	color:  var(--support-color);
 
+}
+
+.h-title{
+	font-weight: 700;
 }
 
 .works-list {
@@ -224,13 +230,13 @@ h2 {
 
 .member-name {
 	margin-bottom: 10px;
-	font-family: 'RobotoMedium';
+	font-weight: 500;
 	line-height: 19px;
 	color: var(--main-text-color);
 }
 
 .member-position {
-	font-family: 'RobotoRegular';
+	font-weight: 400;
 	margin-bottom: 30px;
 	color: var(--support-color);
 }
@@ -251,26 +257,6 @@ footer a {
 	color: var(--main-white);
 }
 
-@font-face {
-font-family: "RobotoRegular"; 
-src: url("fonts/Roboto-Regular.ttf") format("truetype"); 
-font-style: normal; 
-font-weight: normal; 
-} 
-
-@font-face {
-font-family: "RobotoBold"; 
-src: url("fonts/Roboto-Bold.ttf") format("truetype"); 
-font-style: normal; 
-font-weight: normal; 
-} 
-
-@font-face {
-font-family: "RobotoMedium"; 
-src: url("fonts/Roboto-Medium.ttf") format("truetype"); 
-font-style: normal; 
-font-weight: normal; 
-} 
 
 .catalogue-btn:hover{
     color: var(--mainbtn-hover-color);
@@ -288,7 +274,7 @@ font-weight: normal;
     background-color: var(--mainbtn-hover-color);
 	margin: 94px 8px 50px;
 	padding: 6px 22px;
-	font: 16px 'RobotoMedium';
+	font: 16px 'Roboto';
 	border-radius: 4px;
 	border:  none;
 	font-weight: 500;
@@ -329,14 +315,14 @@ font-weight: normal;
 .catalogue-item-name {
 	margin: 20px 24px 54px 24px;
 	margin-bottom: 10px;
-	font-family: 'RobotoMedium';
+	font-family: 'Roboto';
 	line-height: 19px;
 	color: var(--main-text-color);
 }
 
 .catalogue-item-description {
 	margin: 20px 24px 54px 24px;
-	font-family: 'RobotoRegular';
+	font-family: 'Roboto';
 	margin-bottom: 30px;
 	color: var(--support-color);
 }
